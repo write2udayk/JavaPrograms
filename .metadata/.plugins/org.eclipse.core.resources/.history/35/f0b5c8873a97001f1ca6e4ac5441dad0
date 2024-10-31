@@ -1,0 +1,23 @@
+package basicprogram;
+
+import java.util.Iterator;
+import java.util.Scanner;
+
+public class OneToNFactorial {
+	public static void main(String[] args) {
+		Scanner s = new Scanner(System.in);
+		System.out.println("Enter the startng Number!");
+		int start = s.nextInt();
+		System.out.println("Enter the end Number!");
+		int end = s.nextInt();
+
+		for (int i = start; i <= end; i++) {
+			int fact = 1;
+			for (int j = i; j > 1; j--) {
+				fact *= j;
+			}
+			System.out.println("Factorial of " + i + " : " + fact);
+		}
+	}
+
+}

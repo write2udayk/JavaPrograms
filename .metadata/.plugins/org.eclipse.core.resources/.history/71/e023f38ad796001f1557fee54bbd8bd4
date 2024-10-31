@@ -1,0 +1,23 @@
+package basicprogram;
+
+import java.util.Scanner;
+
+//A spy number is a number where the sum of its digits
+//is equal to the product of its digits.
+
+public class SpyNumber {
+	public static void main(String[] args) {
+		Scanner s = new Scanner(System.in);
+		System.out.println("Enter a number!");
+		int num = s.nextInt();
+		int sum = 0;
+		int pro = 1;
+
+		while (num != 0) {
+			int rem=num%10;
+			sum+=rem;
+			p
+		}
+	}
+
+}

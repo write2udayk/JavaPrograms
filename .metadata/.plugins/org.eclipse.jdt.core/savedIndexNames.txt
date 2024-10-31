@@ -1,0 +1,4 @@
+INDEX VERSION 1.134+D:\GitHubRepo\Uday\JavaBasicPrograms\.metadata\.plugins\org.eclipse.jdt.core
+1865797976.index
+2980713043.index
+3757795360.index
