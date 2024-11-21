@@ -1,0 +1,32 @@
+package numberprograms;
+
+import java.util.Scanner;
+
+public class Factors {
+
+	public static void main(String[] args) {
+		Scanner s = new Scanner(System.in);
+		double num = s.nextDouble();
+		int divisorCount = countDivisors(num);
+		System.out.println("Total number of divisors: " + divisorCount);
+	}
+
+	public static int countDivisors(double number) {
+		int count = 0;
+		double sqrt = Math.sqrt(number);
+		System.out.println(sqrt);
+
+		for (int i = 1; i <= sqrt; i++) {
+			if (number % i == 0) {
+
+				if (i != number / i) {
+					count += 2;
+				}
+				count += 1;
+			}
+		}
+
+		return count;
+	}
+
+}

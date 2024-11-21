@@ -1,0 +1,31 @@
+package numberprograms;
+
+import java.util.Scanner;
+
+public class PerfectNumber {
+	public static void main(String[] args) {
+		Scanner s = new Scanner(System.in);
+		System.out.println("Enter a number to check its prefect number/not!");
+		int num = s.nextInt();
+		System.out.println(num + " is prefect Number! : " + checkPrefectNumber(num));
+	}
+
+	public static boolean checkPrefectNumber(int num) {
+
+		if (num < 6) {
+			
+			int sum = 0;
+			for (int i = 1; i < num; i++) {
+				if (num % i == 0) {
+					sum += i;
+				}
+			}
+
+			return sum == num ? true : false;
+
+		}
+		return false;
+
+	}
+
+}

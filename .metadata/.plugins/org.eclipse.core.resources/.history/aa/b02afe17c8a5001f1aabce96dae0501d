@@ -1,0 +1,33 @@
+package numberprograms;
+
+import java.util.Scanner;
+
+public class CheckFirstDigitEven {
+
+	public static void main(String[] args) {
+
+		Scanner s = new Scanner(System.in);
+		System.out.println("Enter a number!");
+		int num = s.nextInt();
+		int count = 0;
+		int copy = num;
+
+		while (num > 0) {
+			count++;
+			num /= 10;
+		}
+		int power = 1;
+		for (int i = 1; i <= count - 1; i++) {
+			power *= 10;
+		}
+
+		int result = (copy / power);
+
+		if (result % 2 == 0) {
+			System.out.println("First digit is even " + result);
+		} else {
+			System.out.println("Not even ");
+		}
+	}
+
+}
